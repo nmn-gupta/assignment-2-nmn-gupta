@@ -9,7 +9,7 @@ package problem1.node;
 public class TreeNode {
     private int data;
     private TreeNode leftNode;
-    private TreeNode righttNode;
+    private TreeNode rightNode;
 
     public int getData() {
         return data;
@@ -27,12 +27,12 @@ public class TreeNode {
         this.leftNode = leftNode;
     }
 
-    public TreeNode getRighttNode() {
-        return righttNode;
+    public TreeNode getRightNode() {
+        return rightNode;
     }
 
-    public void setRighttNode(TreeNode righttNode) {
-        this.righttNode = righttNode;
+    public void setRightNode(TreeNode righttNode) {
+        this.rightNode = righttNode;
     }
 
     @Override
