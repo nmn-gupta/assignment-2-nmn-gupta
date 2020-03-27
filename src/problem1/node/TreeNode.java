@@ -11,4 +11,11 @@ public class TreeNode {
     private TreeNode leftNode;
     private TreeNode righttNode;
 
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
 }
