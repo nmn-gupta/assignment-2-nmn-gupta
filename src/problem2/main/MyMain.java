@@ -28,6 +28,8 @@ public class MyMain {
         }
         System.out.println("----Pre order traversal--out--");
         bst.showTreeData(bst.getRoot());
+        System.out.println("----Post order traversal----");
+        bst.postOrderTraversal(bst.getRoot());
 
 
     }
