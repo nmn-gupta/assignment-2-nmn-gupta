@@ -30,7 +30,7 @@ public class MyMain {
         bst.showTreeData(bst.getRoot());
         System.out.println("Post order traversal : ");
         bst.postOrderTraversal(bst.getRoot());
-        System.out.println("First statement is valid but Second is not.");
+        System.out.println("First statement is valid but Second is not.. ");
 
 
 
