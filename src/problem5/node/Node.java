@@ -20,4 +20,12 @@ public class Node {
     public void setStudent(Student student) {
         this.student = student;
     }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }
