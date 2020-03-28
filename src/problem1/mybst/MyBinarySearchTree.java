@@ -80,13 +80,6 @@ public class MyBinarySearchTree {
         showTreeData(node.getRightNode());
     }
 
-    public void postOrderTraversal(TreeNode node) {
-        if (node == null)
-            return;
-        postOrderTraversal(node.getLeftNode());
-        postOrderTraversal(node.getRightNode());
-        System.out.println(node);
-    }
 
     private void addElementToList(TreeNode node) {
         if (node == null)
@@ -100,6 +93,14 @@ public class MyBinarySearchTree {
     public ArrayList<Integer> getPreOrderList() {
         addElementToList(getRoot());
         return arrayList;
+    }
+
+    public void postOrderTraversal(TreeNode node) {
+        if (node == null)
+            return;
+        postOrderTraversal(node.getLeftNode());
+        postOrderTraversal(node.getRightNode());
+        System.out.println(node);
     }
 
 
