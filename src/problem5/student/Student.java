@@ -7,13 +7,8 @@
 package problem5.student;
 // to store student information and properties
 public class Student {
-    public int getRollNumber() {
-        return 0;
-    }
+    private String name;
+    private int rollNum;
+    private int backLogCounter;
 
-    public void setName(String name) {
-    }
-
-    public void setRollNumber(int rollNo) {
-    }
 }

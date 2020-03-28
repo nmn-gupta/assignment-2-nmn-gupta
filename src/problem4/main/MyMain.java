@@ -24,7 +24,7 @@ public class MyMain {
         System.out.println("Enter the number of nodes ");
         int noOfNodes = sc.nextInt();
         while (noOfNodes-- > 0) {
-            System.out.println("Enter data");
+            System.out.println("Enter the data: ");
             int data = sc.nextInt();
             TreeNode treeNode = new TreeNode();
             treeNode.setData(data);
