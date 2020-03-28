@@ -18,7 +18,7 @@ public class MyMain {
         Scanner sc = new Scanner(System.in);
         MyCircularQueue cq = new MyCircularQueue();
 
-        System.out.println("Enter number of records : ");
+        System.out.println("Enter the number of records : ");
         int noOfRecords = sc.nextInt();
         while (noOfRecords != 0) {
             Student student = new Student();

@@ -27,7 +27,7 @@ public class MyMain {
             System.out.println("Enter the roll number");
             int rollNo = sc.nextInt();
             student.setName(name);
-            student.setRollNumber(rollNo);
+            student.setRollNum(rollNo);
             Node node = new Node();
             node.setStudent(student);
 

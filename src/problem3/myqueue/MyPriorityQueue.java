@@ -21,11 +21,11 @@ public class MyPriorityQueue {
 
     public void enQueue(Node newNode) {
         Node temp = getFront();
-        if (getFront() == null || getFront().getStudent().getRollNumber() > newNode.getStudent().getRollNumber()) {
+        if (getFront() == null || getFront().getStudent().getRollNum() > newNode.getStudent().getRollNum()) {
             setFront(newNode);
             getFront().setNextNode(temp);
         } else {
-            while (temp.getNextNode() != null && temp.getNextNode().getStudent().getRollNumber() <= newNode.getStudent().getRollNumber()) {
+            while (temp.getNextNode() != null && temp.getNextNode().getStudent().getRollNum() <= newNode.getStudent().getRollNum()) {
                 temp = temp.getNextNode();
             }
             newNode.setNextNode(temp.getNextNode());
