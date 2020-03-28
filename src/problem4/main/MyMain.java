@@ -44,9 +44,7 @@ public class MyMain {
             node = queue.deQueue();
             k++;
         }
-
-
-
+        System.out.println("Key --> " + arrayList.get(k) + " Not available");
 
     }
 }
