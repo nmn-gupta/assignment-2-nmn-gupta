@@ -12,4 +12,12 @@ import problem5.student.Student;
 public class Node {
     private Student student;
     private Node next;
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
 }
