@@ -24,14 +24,14 @@ public class MyMain {
             Student student = new Student();
             Node node = new Node();
 
-            System.out.println("Enter the Name : ");
+            System.out.println("Enter the Name of the student : ");
             student.setName(sc.next().trim());
             System.out.println("Enter the Roll Number :");
             student.setRollNum(sc.nextInt());
             System.out.println("Enter backlogs");
             int totalBackLogs = sc.nextInt();
             if (totalBackLogs > 2) {
-                System.out.println("This student is not allowed");
+                System.out.println("This student is not allowed!");
                 continue;
             }
             student.setBackLogCounter(totalBackLogs);
