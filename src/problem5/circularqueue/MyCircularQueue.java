@@ -73,7 +73,7 @@ public class MyCircularQueue {
         Node after = getFront();
         while (true) {
             if (after.getStudent().getBackLogCounter() == 0) {
-                System.out.println("Removed data --> ");
+                System.out.println("Removed data : ");
                 System.out.println(after.getStudent());
                 if (after == getFront()) {
                     previous.setNext(after.getNext());
