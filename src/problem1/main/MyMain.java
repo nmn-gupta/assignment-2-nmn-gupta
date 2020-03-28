@@ -16,7 +16,7 @@ public class MyMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         MyBinarySearchTree bst = new MyBinarySearchTree();
-        System.out.println("Enter number of nodes");/*-->*/
+        System.out.println("Enter the number of nodes");
         int n = sc.nextInt();
         while (n-- > 0) {
             System.out.println("Enter the data");
