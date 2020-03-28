@@ -20,4 +20,12 @@ public class MyQueue {
     public void setFront(Node front) {
         this.front = front;
     }
+
+    public Node getRear() {
+        return rear;
+    }
+
+    public void setRear(Node rear) {
+        this.rear = rear;
+    }
 }
