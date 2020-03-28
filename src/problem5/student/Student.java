@@ -11,4 +11,11 @@ public class Student {
     private int rollNum;
     private int backLogCounter;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
