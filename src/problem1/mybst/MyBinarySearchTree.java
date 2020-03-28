@@ -8,9 +8,17 @@ package problem1.mybst;
 
 import problem1.node.TreeNode;
 
+import java.util.ArrayList;
+
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
     private TreeNode root;
+    private ArrayList<Integer> arrayList;
+
+    public MyBinarySearchTree() {
+        arrayList = new ArrayList<>();
+    }
+
 
     public TreeNode getRoot() {
         return root;
@@ -79,4 +87,20 @@ public class MyBinarySearchTree {
         postOrderTraversal(node.getRightNode());
         System.out.println(node);
     }
+
+    private void addElementToList(TreeNode node) {
+        if (node == null)
+            return;
+        arrayList.add(node.getData());
+        addElementToList(node.getLeftNode());
+        addElementToList(node.getRightNode());
+    }
+
+
+    public ArrayList<Integer> getPreOrderList() {
+        addElementToList(getRoot());
+        return arrayList;
+    }
+
+
 }
