@@ -18,4 +18,12 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getRollNum() {
+        return rollNum;
+    }
+
+    public void setRollNum(int rollNum) {
+        this.rollNum = rollNum;
+    }
 }
