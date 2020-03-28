@@ -7,6 +7,7 @@
 package problem3.main;
 
 import problem3.myqueue.MyPriorityQueue;
+import problem3.node.Node;
 import problem5.student.Student;
 
 import java.util.Scanner;
@@ -21,14 +22,25 @@ public class MyMain {
         int noOfNodes = sc.nextInt();
         while (noOfNodes-- > 0) {
             Student student = new Student();
-            System.out.println("Enter the name ");/*--->*/
+            System.out.println("Enter the name ");
             String name = sc.next().trim();
-            System.out.println("Enter the roll number");/*--->*/
+            System.out.println("Enter the roll number");
             int rollNo = sc.nextInt();
             student.setName(name);
             student.setRollNumber(rollNo);
+            Node node = new Node();
+            node.setStudent(student);
+
+            pq.enQueue(node);
 
 
+        }
+        System.out.println("Printing Queue : ");
+
+        Node node = pq.deQueue();
+        while (node != null) {
+            System.out.println(node);
+            node = pq.deQueue();
         }
 
 
