@@ -68,7 +68,7 @@ public class MyCircularQueue {
         return temp;
     }
 
-    public void deleteZeroBacklogfield() {
+    public void deleteZeroBacklogField() {
         Node previous = getRear();
         Node after = getFront();
         while (true) {
