@@ -10,4 +10,10 @@ public class Student {
     public int getRollNumber() {
         return 0;
     }
+
+    public void setName(String name) {
+    }
+
+    public void setRollNumber(int rollNo) {
+    }
 }
