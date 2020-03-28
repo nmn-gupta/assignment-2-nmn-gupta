@@ -43,7 +43,18 @@ public class MyMain {
             noOfRecords--;
         }
 
+        System.out.println();
+        System.out.println("Data before deleting records");
+        System.out.println();
+        cq.traverseQueue();
 
+        System.out.println("Removing students having no backlogs");
+        cq.deleteZeroBacklogField();
+
+        System.out.println();
+        System.out.println("Data after deleting records");
+        System.out.println();
+        cq.traverseQueue();
 
 
     }
