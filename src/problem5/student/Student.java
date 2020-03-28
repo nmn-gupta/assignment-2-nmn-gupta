@@ -26,4 +26,12 @@ public class Student {
     public void setRollNum(int rollNum) {
         this.rollNum = rollNum;
     }
+
+    public int getBackLogCounter() {
+        return backLogCounter;
+    }
+
+    public void setBackLogCounter(int backLogCounter) {
+        this.backLogCounter = backLogCounter;
+    }
 }
